@@ -1,0 +1,117 @@
+// Profile.scss
+
+.profile-page {
+    background-color: #424874;
+    height: auto;
+    width: 100%;
+    position: relative;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  .Profile-details-container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    padding: 20px;
+    flex-wrap: wrap;
+  }
+  
+  .family-members, .profile-photo {
+    flex: 1;
+    margin: 20px;
+  }
+  
+  .family-members h2, .profile-photo h2 {
+    color: #ffffff;
+    margin-bottom: 20px;
+  }
+  
+  .family-members .family-member {
+    background-color: #313656;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    color: white;
+  }
+  
+  .family-members .family-member h3 {
+    margin: 0 0 10px 0;
+  }
+  
+  .family-members .family-member ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .family-members .family-member ul li {
+    margin-bottom: 5px;
+  }
+  
+  .family-profile {
+    height: 400px;
+    width: 400px;
+    border-radius: 8px;
+    object-fit: cover;
+  }
+  
+  .Hamburger-menu {
+    display: none;
+  }
+  
+  .Hamburger-menu.active {
+    display: block;
+    position: fixed;
+    top: 60px;
+    left: 0;
+    width: 200px;
+    background-color: #A6B1E1;
+    padding: 20px;
+    border-radius: 8px;
+    z-index: 1000;
+  }
+  
+  .Hamburger-menu a {
+    display: block;
+    color: #424874;
+    text-decoration: none;
+    margin-bottom: 10px;
+  }
+  
+  .Hamburger-icon {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    cursor: pointer;
+    z-index: 11;
+  }
+  
+  .Hamburger-line1,
+  .Hamburger-line2,
+  .Hamburger-line3 {
+    width: 40px;
+    background-color:#424874;
+    height: 5px;
+    border-radius: 3px;
+    margin: 5px;
+    transition: all 0.3s ease;
+  }
+  
+  .Hamburger-icon.clicked .Hamburger-line1 {
+    transform: rotate(45deg) translate(5px, 5px);
+  }
+  
+  .Hamburger-icon.clicked .Hamburger-line2 {
+    opacity: 0;
+  }
+  
+  .Hamburger-icon.clicked .Hamburger-line3 {
+    transform: rotate(-45deg) translate(7px, -7px);
+  }
+  
+  .Hamburger-icon.unclicked .Hamburger-line1,
+  .Hamburger-icon.unclicked .Hamburger-line2,
+  .Hamburger-icon.unclicked .Hamburger-line3 {
+    transform: rotate(0) translate(0);
+    opacity: 1;
+  }
+  

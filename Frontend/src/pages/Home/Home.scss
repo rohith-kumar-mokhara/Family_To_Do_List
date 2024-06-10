@@ -1,0 +1,98 @@
+// Home.scss
+
+@import "../../styles/font.scss";
+
+.home {
+  height: 100vh;
+  width: 100%;
+  font-family: 'Poppins', sans-serif;
+}
+
+.home-welcome-container {
+  width: 100%;
+  background-color: #424874;
+  height: 50%;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+}
+
+.home-login-container {
+  background-color: #A6B1E1;
+  padding: 20px;
+  text-align: center;
+  border-radius: 8px;
+  margin: 20px 0;
+}
+
+.home-login-container p {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.home-login-container button {
+  background-color: #313656;
+  color: #ffffff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.home-login-container button:hover {
+  background-color: #495bad;
+}
+
+.home-features-container,
+.home-benefits-container,
+.home-task-container {
+  background-color: #f8f9fa;
+  padding: 40px 20px;
+  margin: 20px 0;
+  border-radius: 8px;
+}
+
+.home-features-container h2,
+.home-benefits-container h2,
+.home-task-container h2 {
+  color: #313656;
+  margin-bottom: 20px;
+}
+
+.home-features-container ul,
+.home-benefits-container ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.home-features-container ul li,
+.home-benefits-container ul li {
+  margin-bottom: 10px;
+}
+
+.Footer-home {
+  background-color: #313656;
+  color: #ffffff;
+  padding: 20px;
+  text-align: center;
+}
+
+.contact-details {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.each-contact {
+  margin: 0 10px;
+}
+
+.each-contact img {
+  width: 30px;
+  margin-right: 5px;
+}

@@ -1,0 +1,59 @@
+.leaderboard-page{
+    padding: 20px;
+    width: 100%;
+    height: 100vh;
+    background-color: #424874;
+    .leaderboard-container-wrapper{
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        justify-content: center;
+    }
+    .leaderboard-container{
+        box-shadow: 2px 2px 2px rgb(176, 176, 176);
+        width: 50%;
+        background-color:#A6B1E1 ;
+        border-radius: 8px;
+    }
+    h1 {
+      text-align: center;
+      color: #424874;
+      margin-bottom: 20px;
+    }
+  
+    .leaderboard-list {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+  
+    .leaderboard-item {
+      display: flex;
+      justify-content: space-between;
+      padding: 10px;
+      background-color: #fff;
+      border-radius: 4px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  
+      &:nth-child(odd) {
+        background-color: #A6B1E1;
+      }
+  
+      .leaderboard-rank {
+        font-weight: bold;
+        color: #424874;
+      }
+  
+      .leaderboard-name {
+        flex: 1;
+        margin-left: 10px;
+        color: #424874;
+      }
+  
+      .leaderboard-points {
+        font-weight: bold;
+        color: #313656;
+      }
+    }
+  }
+  
